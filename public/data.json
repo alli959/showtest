@@ -1,0 +1,74 @@
+{
+    "Users":
+        [ 
+            {   
+                "id": "1",
+                "userName": "asdf1234",
+                "name": "asdf",
+                "aboutUser:": "this is a text about me"
+            },
+
+            {
+                "id": "2",
+                "userName": "asdf1234",
+                "name": "asdf",
+                "aboutUser:": "this is a text about me"
+            },
+
+            {   
+                "id": "3",
+                "userName": "asdf1234",
+                "name": "asdf",
+                "aboutUser:": "this is a text about me"
+            },
+
+            {
+                "id": "4",
+                "userName": "asdf1234",
+                "name": "asdf",
+                "aboutUser:": "this is a text about me"
+            }
+        ],
+
+    "Groups":
+        [
+            {
+                "id": "1",
+                "groupName": "gname1",
+                "groupDescription": "asdfasdf"
+            },
+            {
+                "id": "2",
+                "groupName": "gname2",
+                "groupDescription": "asdfasdf"
+            },
+            {
+                "id": "3",
+                "groupName": "gname3",
+                "groupDescription": "asdfasdf"
+            }
+
+        ],
+    
+
+    "UserGroup": 
+        [
+            {
+                "userId": "1",
+                "groupId": "1"
+            },
+            {
+                "userId": "1",
+                "groupId": "2"
+            },
+            {
+                "userId": "2",
+                "groupId": "1"
+            },
+            {
+                "userId": "3",
+                "groupId": "1"
+            }
+        ] 
+    
+}
