@@ -1,19 +1,40 @@
 import React, { useState, useEffect } from 'react';
-import {Card, CardTitle} from 'react-mdl';
-import { useParams } from "react-router-dom";
-import { withRouter } from "react-router";
 
 
 
 
-function UserPage(User) {
-    let {id} = useParams();
-    
+function UserPage(param) {
+
+
+
+    // Array of users Objects with param:
+        // id
+        // userName
+        // name
+        // aboutUser
+
+    const users = param.user;
+
+    // Array of group Objects with param:
+        // id
+        // groupName
+        // groupDescription
+
+    const groups = param.Groups;
+
+
+
     return (
-        <div className = "Card_contact" style = {{display: 'flex'}}>
+        <div className = "UserPage">
+            <div className = "Names">
+                {console.log(param)}
+                <ul>
+                    {users.map((user, index) => <li key={index}>{user.name} </li> )}
+                </ul>
             </div>
+        </div>
 
 )
 }
 
-export default withRouter(UserPage);
+export default UserPage;

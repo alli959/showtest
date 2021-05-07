@@ -3,30 +3,36 @@
         [ 
             {   
                 "id": "1",
-                "userName": "asdf1234",
-                "name": "asdf",
-                "aboutUser:": "this is a text about me"
+                "userName": "testUser1",
+                "name": "testName1",
+                "aboutUser": "Blonde, coily hair tight in a ponytail reveals a fine, charming face. Woeful black eyes, set seductively within their sockets, watch affectionately over the deserts they've bled for for so long. A large beard gracefully compliments his eyes and hair and leaves a pleasant memory of his fortunate destiny. This is the face of Maverick Eustis, a true spectacle among humans. He stands short among others, despite his big frame. There's something alluring about him, perhaps it's his presence or perhaps it's simply a feeling of arogance. But nonetheless, people tend to befriend him, while trying to subtly look more like him."
             },
 
             {
                 "id": "2",
-                "userName": "asdf1234",
-                "name": "asdf",
-                "aboutUser:": "this is a text about me"
+                "userName": "testUser2",
+                "name": "testName2",
+                "aboutUser": "Red, shaggy hair clumsily hangs over a bony, sad face. Glittering brown eyes, set gracefully within their sockets, watch rapidly over the natives they've safeguarded for so long. Tribal marks in the form of 1 stripe under each eye marks his blood relation but, more importantly leaves a delightful memory of deceased loved ones. This is the face of Razi Xueshi, a true daredevil among trolls. He stands small among others, despite his scraggy frame. There's something curious about him, perhaps it's a feeling of comfort or perhaps it's simply his odd friends. But nonetheless, people tend to brag about knowing him, while learning as much about him as possible."
             },
 
             {   
                 "id": "3",
-                "userName": "asdf1234",
-                "name": "asdf",
-                "aboutUser:": "this is a text about me"
+                "userName": "testUser3",
+                "name": "testName3",
+                "aboutUser": "Red, dreadlocks is pulled back to reveal a long, frowning face. Glinting green eyes, set buried within their sockets, watch loyally over the country they've been isolated from for so long. A sword left a mark reaching from the top of the left cheek , running across the nose and ending above his left eye leaves a compelling memory of his unfortunate past. This is the face of Greekeels Haggletooth, a true vindicator among goblins. He stands tall among others, despite his subtle frame. There's something extraordinary about him, perhaps it's his persistence or perhaps it's simply a feeling of joy. But nonetheless, people tend to try to get him to marry their off-spring, while trying to avoid him."
             },
 
             {
                 "id": "4",
-                "userName": "asdf1234",
-                "name": "asdf",
-                "aboutUser:": "this is a text about me"
+                "userName": "testUser4",
+                "name": "testName4",
+                "aboutUser": "Brown, dreadlocks braided to reveal a strong, wild face. Shining brown eyes, set wickedly within their sockets, watch anxiously over the ships they've come to love for so long. Fair skin gracefully compliments her hair and cheekbones and and leaves a captivating memory of her luck in battles.The is the face of Kylee Davenport, a true warden among werewolves. She stands easily among others, despite her delicate frame. There's something bewildering about her, perhaps it's her personality or perhaps it's simply a feeling of regret. But nonetheless, people tend to stay on her good side, while thinking of ways to become her friend."
+            },
+            {
+                "id": "5",
+                "userName": "testUser5",
+                "name": "testName5",
+                "aboutUser": "Black, short hair almost fully covers a craggy, tense face. Bulging blue eyes, set delicately within their sockets, watch watchfully over the tribes they've disassociated with for so long. A moustache elegantly compliments his hair and cheekbones and leaves an amusing memory of his fortunate adventures. This is the face of Gunnar Locks, a true pioneer among humans. He stands common among others, despite his brawny frame. There's something misleading about him, perhaps it's a feeling of shame or perhaps it's simply his friendly demeanor. But nonetheless, people tend to wish to get to know him better, while secretly dispising him."
             }
         ],
 
@@ -34,17 +40,17 @@
         [
             {
                 "id": "1",
-                "groupName": "gname1",
+                "groupName": "Group Name1",
                 "groupDescription": "asdfasdf"
             },
             {
                 "id": "2",
-                "groupName": "gname2",
+                "groupName": "Group Name2",
                 "groupDescription": "asdfasdf"
             },
             {
                 "id": "3",
-                "groupName": "gname3",
+                "groupName": "Group Name3",
                 "groupDescription": "asdfasdf"
             }
 
