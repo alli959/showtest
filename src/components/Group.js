@@ -37,7 +37,6 @@ function Group(param) {
     return (
         <div className = "User">
             <div className = "UserContent">
-                {console.log(param.users)}
                     <h1 className = "userName">Group Name</h1>
                     <p>{group.groupName}</p>
                     <div className = "aboutUser">

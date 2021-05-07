@@ -29,7 +29,6 @@ function GroupPage(param) {
     return (
         <div className = "GroupPage">
             <div className = "Names">
-                {console.log(param)}
                 <ul>
                     {groups.map((group, index) => <li key={index} id = {index} onClick = {groupClick}>{group.groupName} </li> )}
                 </ul>

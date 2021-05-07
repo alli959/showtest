@@ -30,7 +30,6 @@ function UserPage(param) {
     return (
         <div className = "UserPage">
             <div className = "Names">
-                {console.log(param)}
                 <ul>
                     {users.map((user, index) => <li key={index} id = {index} onClick = {UserClick}>{user.name} </li> )}
                 </ul>

@@ -152,7 +152,6 @@ function App() {
         return response.json();
       })
       .then(function(Data) {
-        console.log("myJson",Data);
         setUser(Data.Users);
         setGroup(Data.Groups);
         setUserGroup(Data.UserGroup);
