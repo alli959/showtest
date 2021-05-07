@@ -5,6 +5,7 @@ import User from './components/User';
 import Group from './components/Group';
 
 
+
 function App() {
 
   //INIT
@@ -103,9 +104,9 @@ function App() {
     if(isGroup) {
 
       let temp = [];
-      for(var i = 0; i<userGroup.length; i++) {
-        if(parseInt(userGroup[i].groupId) -1 == groupNr) {
-          temp.push(user[parseInt(userGroup[i].userId) -1])
+      for(var j = 0; i<userGroup.length; j++) {
+        if(parseInt(userGroup[j].groupId) -1 == groupNr) {
+          temp.push(user[parseInt(userGroup[j].userId) -1])
         }
       }
       return (
@@ -176,7 +177,7 @@ function App() {
                 <button className = "groupTab" style = {isActive(2)} onClick={() =>tabClick(2)}>Groups</button>
               </div>
             </div>
-              {checkTab()}
+            {checkTab()}
             </div>
       </div>
   );

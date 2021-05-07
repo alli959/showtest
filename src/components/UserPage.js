@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 
 
@@ -8,7 +8,6 @@ function UserPage(param) {
 
 
     const UserClick = (e) => {
-        console.log(e);
         param.onChange(e.target.id);
     }
 
@@ -25,7 +24,6 @@ function UserPage(param) {
         // groupName
         // groupDescription
 
-    const groups = param.Groups;
 
 
 

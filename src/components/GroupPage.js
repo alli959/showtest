@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import {Card, CardTitle} from 'react-mdl';
-import { useParams } from "react-router-dom";
-import { withRouter } from "react-router";
+import React from 'react';
+
 
 
 
@@ -18,12 +16,11 @@ function GroupPage(param) {
     // name
     // aboutUser
     
-    const users = param.user;
 
     // Array of group Objects with param:
-        // id
-        // groupName
-        // groupDescription
+    // id
+    // groupName
+    // groupDescription
 
     const groups = param.group;
 
