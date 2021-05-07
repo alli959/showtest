@@ -6,6 +6,9 @@ html {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.Logo {
   color: white;
 }
 
@@ -19,8 +22,16 @@ li {
   font-family: "Raleway", sans-serif;
   list-style-type:none;
   font-size: x-large;
-  margin-right: 10%
+  margin-right: 10%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  border-style: double;
+  padding-left: 0.5em;
+}
 
+li:hover {
+  color:gray;
 }
 
 button {
@@ -78,8 +89,29 @@ button {
   margin: auto;
   background-color: white;
   box-shadow: 10px 10px 5px #63d4719c;
-  
 }
+
+.User {
+  width: 50vw;
+  margin:auto;
+  background-color: white;
+  box-shadow: 10px 10px 5px #63d4719c;
+  margin-block-start: 1em;
+}
+
+.UserContent {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.UserContent h1 {
+  margin: 0;
+}
+
+
 .Header {
   display: flex;
   flex-direction: column;
@@ -89,3 +121,26 @@ button {
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
+
+.userName {
+  margin-bottom:0;
+}
+
+.name {
+  margin-top: 0;
+}
+
+.ProfilePic {
+  width: 20%;
+  margin: auto;
+}
+
+.aboutUser {
+  width: 50%;
+  margin: auto;
+}
+
+.aboutUser h1 {
+  text-align: center;
+}
+

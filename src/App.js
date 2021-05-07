@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import UserPage from './components/UserPage';
 import GroupPage from './components/GroupPage';
+import User from './components/User';
+import Group from './components/Group';
 
 
 function App() {
@@ -24,35 +26,108 @@ function App() {
         "aboutUser": "this is a text about me"
       }
     ]);
+
+  const [userGroup, setUserGroup] = useState(
+    [
+      {
+        "userId": "1",
+        "groupId": "1"
+      }
+    ]);
+
+  
   const [activeTab, setActiveTab] = useState(1)
 
+  const [isUser, setIsUser] = useState(false);
+  const [userNr, setUserNr] = useState(0);
+  const [isGroup, setIsGroup] = useState(false);
+  const [groupNr, setGroupNr] = useState(0);
+  
 
+
+  //User Click
+  const userClick = (id) => {
+    setIsUser(true);
+    setUserNr(id);
+    setActiveTab(-1);
+    setIsGroup(false);
+  }
+
+  //Group Click
+  const groupClick = (id) => {
+    setIsGroup(true);
+    setGroupNr(id);
+    setActiveTab(-1);
+    setIsUser(false);
+  }
+
+
+  const tabClick = (id) => {
+    setIsUser(false);
+    setIsGroup(false);
+    setActiveTab(id);
+  }
+  
 
   //Check for active TAB for the view
   const isActive = (number) => {
+    
     if(number == activeTab) {
       return {'background':'#9eaeb3',
-              'border-width':'5px',  
-              'border-style':'groove'};
+              'borderWidth':'5px',  
+              'borderStyle':'groove'};
     }
     else {
       return {'background':'#3f5b63'}
     }
   }
 
+  
+
   //Check witch TAB is active
   const checkTab = () => {
-    if(activeTab == 1) {
-      return(
+    if(isUser) {
+      let temp = [];
+      for(var i = 0; i<userGroup.length; i++) {
+        if(parseInt(userGroup[i].userId) -1 == userNr) {
+          temp.push(group[parseInt(userGroup[i].groupId) -1])
+        }
+      }
+      return (
         <div>
-           <UserPage user = {user} />
+          < User user = {user[userNr]} groups = {temp} />
         </div>
       )
     }
+
+    if(isGroup) {
+
+      let temp = [];
+      for(var i = 0; i<userGroup.length; i++) {
+        if(parseInt(userGroup[i].groupId) -1 == groupNr) {
+          temp.push(user[parseInt(userGroup[i].userId) -1])
+        }
+      }
+      return (
+        <div>
+          < Group group = {group[groupNr]} users = {temp} />
+        </div>
+      )
+    }
+
+    if(activeTab == 1) {
+      return(
+        <div>
+           <UserPage user = {user} onChange = {userClick} />
+        </div>
+      )
+    }
+
+
     else {
       return(
         <div>
-          <GroupPage group = {group} />
+          <GroupPage group = {group} onChange = {groupClick} />
         </div>
       )
     }
@@ -79,6 +154,7 @@ function App() {
         console.log("myJson",Data);
         setUser(Data.Users);
         setGroup(Data.Groups);
+        setUserGroup(Data.UserGroup);
       });
   }
   useEffect( ()=>{
@@ -96,8 +172,8 @@ function App() {
                 SHOWDECK
               </h1>
               <div className = "Tabs">
-                <button className = "userTab" style = {isActive(1)} onClick={() =>setActiveTab(1)}>Users</button>
-                <button className = "groupTab" style = {isActive(2)} onClick={() =>setActiveTab(2)}>Groups</button>
+                <button className = "userTab" style = {isActive(1)} onClick={() =>tabClick(1)}>Users</button>
+                <button className = "groupTab" style = {isActive(2)} onClick={() =>tabClick(2)}>Groups</button>
               </div>
             </div>
               {checkTab()}

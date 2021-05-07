@@ -7,32 +7,37 @@ import { withRouter } from "react-router";
 
 
 function GroupPage(param) {
-   // Array of users Objects with param:
+
+    const groupClick = (e) => {
+        param.onChange(e.target.id);
+    }
+
+    // Array of users Objects with param:
+    // id
+    // userName
+    // name
+    // aboutUser
+    
+    const users = param.user;
+
+    // Array of group Objects with param:
         // id
-        // userName
-        // name
-        // aboutUser
+        // groupName
+        // groupDescription
 
-        const users = param.user;
+    const groups = param.group;
 
-        // Array of group Objects with param:
-            // id
-            // groupName
-            // groupDescription
-    
-        const groups = param.group;
-    
-    
-    
-        return (
-            <div className = "GroupPage">
-                <div className = "Names">
-                    {console.log(param)}
-                    <ul>
-                        {groups.map((group, index) => <li key={index}>{group.groupName} </li> )}
-                    </ul>
-                </div>
+
+
+    return (
+        <div className = "GroupPage">
+            <div className = "Names">
+                {console.log(param)}
+                <ul>
+                    {groups.map((group, index) => <li key={index} id = {index} onClick = {groupClick}>{group.groupName} </li> )}
+                </ul>
             </div>
+        </div>
     
     )
 }

@@ -7,6 +7,11 @@ function UserPage(param) {
 
 
 
+    const UserClick = (e) => {
+        console.log(e);
+        param.onChange(e.target.id);
+    }
+
     // Array of users Objects with param:
         // id
         // userName
@@ -29,7 +34,7 @@ function UserPage(param) {
             <div className = "Names">
                 {console.log(param)}
                 <ul>
-                    {users.map((user, index) => <li key={index}>{user.name} </li> )}
+                    {users.map((user, index) => <li key={index} id = {index} onClick = {UserClick}>{user.name} </li> )}
                 </ul>
             </div>
         </div>
